@@ -12,16 +12,15 @@
  * Fits the model on training data and generates predictions for the test set.
 5. Model Evaluation
  * Evaluates performance using the following metrics:
-   - Mean Absolute Error (MAE): 
-   - Mean Squared Error (MSE):
-   - R² Score: 
+   - Mean Absolute Percentage Error (MAE): 8.013308488415326
+   - Mean Squared Error (MSE): 185859186550.58057
+   - R² Score: 0.9339058586124845 
 6. Further Optimization
  * After identifying low-performing data points, a filtering step was introduced to remove rows that negatively impacted model performance.
  * R² Score significantly improved post-filtering, confirming that the removed rows were outliers or noise affecting model accuracy.
  * This insight led to better generalization and model reliability.
-report.html: A complete profiling report of the dataset.
-Printed evaluation metrics to assess model accuracy.
-
+7. report.html: A complete profiling report of the dataset.
+8. Printed evaluation metrics to assess model accuracy.
 * pandas, matplotlib, seaborn for data manipulation and visualization
 * ydata-profiling for automated EDA
 * scikit-learn for data preprocessing, model training, and evaluation
